@@ -12,9 +12,8 @@ spec:
     - -c
     - |
       echo "Post deployment work"
-      sleep 10
     image: registry.access.redhat.com/ubi8/ubi:latest
     imagePullPolicy: IfNotPresent
-    name: welcome-sleep-pod
+    name: welcome-postsync-pod
   dnsPolicy: ClusterFirst
   restartPolicy: Never
