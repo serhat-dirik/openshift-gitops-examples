@@ -8,7 +8,6 @@ metadata:
   name: "todo-gitops"
   annotations:
     argocd.argoproj.io/sync-wave: "2"
-  namespace: todo
 spec:
   ports:
   - name: "http"
