@@ -6,7 +6,6 @@ metadata:
     app.kubernetes.io/name: "todo-gitops"
     app.kubernetes.io/version: "1.0.0"
   name: "todo-gitops"
-  namespace: todo
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 ---
@@ -17,7 +16,6 @@ metadata:
     app.kubernetes.io/name: "todo-gitops"
     app.kubernetes.io/version: "1.0.0"
   name: "todo-gitops"
-  namespace: todo
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
