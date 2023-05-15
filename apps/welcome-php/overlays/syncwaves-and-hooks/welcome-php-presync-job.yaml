@@ -1,10 +1,10 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-#  name: welcome-presync-job
+  name: welcome-presync-job
   annotations:
     argocd.argoproj.io/hook: PreSync
-#    argocd.argoproj.io/sync-wave: "0"
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   template:
     metadata:
