@@ -15,6 +15,7 @@ spec:
         - /bin/bash
         - -c
         - |
+          echo "PreSynch job worked"
           sleep 15
         image: registry.access.redhat.com/ubi8/ubi:latest
         imagePullPolicy: IfNotPresent
