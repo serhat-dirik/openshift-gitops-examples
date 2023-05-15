@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: welcome-postsyncpod
+#  name: welcome-postsyncpod
   annotations:
     argocd.argoproj.io/hook: PostSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
+ #   argocd.argoproj.io/hook-delete-policy: HookSucceeded
 spec:
   containers:
   - command:
