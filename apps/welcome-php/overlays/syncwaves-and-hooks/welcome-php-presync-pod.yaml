@@ -4,7 +4,6 @@ metadata:
   name: welcome-presynch-pod
   annotations:
     argocd.argoproj.io/hook: PreSync
-    argocd.argoproj.io/hook-delete-policy: HookSucceeded
     argocd.argoproj.io/sync-wave: "1"
 spec:
   containers:
@@ -16,6 +15,6 @@ spec:
       sleep 10
     image: registry.access.redhat.com/ubi8/ubi:latest
     imagePullPolicy: IfNotPresent
-    name: welcome-sleep-pod
+    name: welcome-presynch-sleep-pod
   dnsPolicy: ClusterFirst
   restartPolicy: Never
