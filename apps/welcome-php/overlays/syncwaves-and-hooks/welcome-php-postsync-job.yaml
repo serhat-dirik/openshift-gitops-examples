@@ -16,7 +16,6 @@ spec:
         - -c
         - |
           echo "PostSync job worked"
-          sleep 15
         image: registry.access.redhat.com/ubi8/ubi:latest
         imagePullPolicy: IfNotPresent
         name: welcome-postsync-job
