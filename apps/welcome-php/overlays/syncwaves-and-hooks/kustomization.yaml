@@ -5,3 +5,4 @@ resources:
 - welcome-php-postsync-pod.yaml
 - welcome-php-presync-job.yaml
 - welcome-php-presync-pod.yaml
+- welcome-php-postsync-job.yaml
